@@ -6,7 +6,7 @@ public class AdditionalMaterialsService {
 
     public static int countMaterials = 0;
 
-    public void someMaterials(String additionalMaterialsOne, int ID){
+    public void createMaterials(String additionalMaterialsOne, int ID){
         AdditionalMaterials additionalMaterials = new AdditionalMaterials(additionalMaterialsOne,ID);
         countMaterials++;
     }

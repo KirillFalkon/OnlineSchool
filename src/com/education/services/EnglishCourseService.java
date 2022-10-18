@@ -9,7 +9,7 @@ public class EnglishCourseService {
 
     public static int countCourse = 0;
 
-    public void someCourse(String EnglishCoursename, Teacher teacher, Student student, Lecture lecture, int ID){
+    public void createCourse(String EnglishCoursename, Teacher teacher, Student student, Lecture lecture, int ID){
 
     EnglishCourse course = new EnglishCourse(EnglishCoursename, teacher, student, lecture, ID);
     countCourse++;

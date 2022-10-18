@@ -6,7 +6,7 @@ public class TeacherService {
 
     public static int countTeacher = 0;
 
-    public void someTeacher(String firstName, String secondName, int ID){
+    public void createTeacher(String firstName, String secondName, int ID){
         Teacher teacher = new Teacher(firstName,secondName,ID);
         countTeacher++;
     }

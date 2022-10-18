@@ -8,7 +8,7 @@ public class LectureService {
 
     public static int countLecture = 0;
 
-    public void someLecture(String lectureOne, Homework someHomework, AdditionalMaterials additionalMaterials, int ID){
+    public void createLecture(String lectureOne, Homework someHomework, AdditionalMaterials additionalMaterials, int ID){
         Lecture lecture = new Lecture(lectureOne,someHomework,additionalMaterials,ID);
 
         countLecture++;

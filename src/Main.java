@@ -10,6 +10,8 @@ public class Main {
         lectureService.createLecture("1", new Homework("1", 1), new AdditionalMaterials("1", 1), 1);
         lectureService.createLecture("1", new Homework("1", 1), new AdditionalMaterials("1", 1), 1);
         lectureService.createLecture("1", new Homework("1", 1), new AdditionalMaterials("1", 1), 1);
+        lectureService.createLecture("1", new Homework("1", 1), new AdditionalMaterials("1", 1), 1);
+        lectureService.createLecture("1", new Homework("1", 1), new AdditionalMaterials("1", 1), 1);
 
         System.out.println(lectureService.countLecture);
     }

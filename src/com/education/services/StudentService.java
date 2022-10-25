@@ -4,10 +4,7 @@ import com.education.courses.Student;
 
 public class StudentService {
 
-    public static int countStudent = 0;
-
-    public void createStudent(String firstName, String secondName, int ID){
-        Student student = new Student(firstName,secondName,ID);
-        countStudent++;
+    public Student createStudent(String firstName, String secondName, int ID){
+        return new Student(firstName,secondName,ID);
     }
 }

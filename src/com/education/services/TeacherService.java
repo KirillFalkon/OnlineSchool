@@ -4,10 +4,7 @@ import com.education.courses.Teacher;
 
 public class TeacherService {
 
-    public static int countTeacher = 0;
-
-    public void createTeacher(String firstName, String secondName, int ID){
-        Teacher teacher = new Teacher(firstName,secondName,ID);
-        countTeacher++;
+    public Teacher createTeacher(String firstName, String secondName, int ID){
+        return new Teacher(firstName,secondName,ID);
     }
 }

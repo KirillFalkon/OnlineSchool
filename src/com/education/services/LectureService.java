@@ -1,16 +1,13 @@
 package com.education.services;
 
-import com.education.courses.AdditionalMaterials;
-import com.education.courses.Lecture;
-import com.education.courses.Homework;
+import com.education.courses.*;
 
 public class LectureService {
 
-    public static int countLecture = 0;
 
-    public void createLecture(String lectureOne, Homework someHomework, AdditionalMaterials additionalMaterials, int ID){
-        Lecture lecture = new Lecture(lectureOne,someHomework,additionalMaterials,ID);
 
-        countLecture++;
-        }
+    public Lecture createLecture(String lectureOne, Homework someHomework, AdditionalMaterials additionalMaterials, int ID) {
+        return new Lecture(lectureOne, someHomework, additionalMaterials, ID);
+
+    }
 }

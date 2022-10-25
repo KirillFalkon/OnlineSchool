@@ -4,10 +4,7 @@ import com.education.courses.AdditionalMaterials;
 
 public class AdditionalMaterialsService {
 
-    public static int countMaterials = 0;
-
-    public void createMaterials(String additionalMaterialsOne, int ID){
-        AdditionalMaterials additionalMaterials = new AdditionalMaterials(additionalMaterialsOne,ID);
-        countMaterials++;
+    public AdditionalMaterials createMaterials(String additionalMaterialsOne, int ID){
+        return new AdditionalMaterials(additionalMaterialsOne,ID);
     }
 }

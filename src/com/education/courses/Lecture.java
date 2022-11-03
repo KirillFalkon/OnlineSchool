@@ -1,7 +1,7 @@
 package com.education.courses;
 
 public class Lecture {
-    private String lectureOne;
+    private String lectureName;
     private Homework homework;
     private AdditionalMaterials additionalMaterials;
     private int ID;
@@ -9,8 +9,8 @@ public class Lecture {
     public static int counter = 0;
     public int courseID;
 
-    public Lecture(String lectureOne, Homework homework, AdditionalMaterials additionalMaterials, int ID) {
-        this.lectureOne = lectureOne;
+    public Lecture(String lectureName, Homework homework, AdditionalMaterials additionalMaterials, int ID) {
+        this.lectureName = lectureName;
         this.homework = homework;
         this.additionalMaterials = additionalMaterials;
         this.ID = ++counter;
@@ -20,5 +20,17 @@ public class Lecture {
         this.ID = ++counter;
     }
 
+    public Lecture(String lectureName, int courseID) {
+        this.lectureName = lectureName;
+        this.courseID = ++counter;
+    }
+
+    @Override
+    public String toString() {
+        return "Lecture{" +
+                "lectureName='" + lectureName + '\'' +
+                ", courseID=" + courseID +
+                '}';
+    }
 }
 

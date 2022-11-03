@@ -63,12 +63,15 @@ public class Main {
                             System.out.println("Exit the program");
                             return;
                         case 2:
-                            Lecture lecture2 = new Lecture(lectureName1, 1);
+                            System.out.println("Enter name of another lecture = ");
+                            String lectureName2 = scanner.next();
+                            Lecture lecture2 = new Lecture(lectureName2, 1);
                             System.out.println(lecture2);
                             System.out.println("Total number of lectures - " + Lecture.counter);
                             return;
                         default:
                             System.out.println("Error");
+                            return;
                     }
                 default:
                     System.out.println("Error");

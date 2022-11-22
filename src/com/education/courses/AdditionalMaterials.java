@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class AdditionalMaterials {
+public class AdditionalMaterials extends University {
     private String additionalMaterialsOne;
     private int ID;
 

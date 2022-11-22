@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class Student {
+public class Student extends University {
     private String firstName;
     private String secondName;
     private int ID;

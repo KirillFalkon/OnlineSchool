@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class Lecture {
+public class Lecture extends University {
     private String lectureName;
     private Homework homework;
     private AdditionalMaterials additionalMaterials;

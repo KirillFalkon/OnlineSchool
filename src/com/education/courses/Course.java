@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class Course {
+public class Course extends University {
     String name = "English";
 
     private Teacher teacher;

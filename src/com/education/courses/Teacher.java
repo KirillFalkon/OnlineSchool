@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class Teacher {
+public class Teacher extends University {
     private String firstName;
     private String secondName;
     private int ID;
@@ -10,7 +10,16 @@ public class Teacher {
     public Teacher(String firstName, String secondName, int ID) {
         this.firstName = firstName;
         this.secondName = secondName;
-        this.ID = ++counter;
+        this.ID = ID;
 
+    }
+
+    @Override
+    public String toString() {
+        return "Teacher{" +
+                "firstName='" + firstName + '\'' +
+                ", secondName='" + secondName + '\'' +
+                ", ID=" + ID +
+                '}';
     }
 }

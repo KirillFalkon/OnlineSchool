@@ -1,6 +1,6 @@
 package com.education.courses;
 
-public class Homework {
+public class Homework extends University {
     private String homework;
     private int ID;
 
